@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
     // home: const AlertScreen(),
     initialRoute: AppRoutes.initialRoute,
-    routes: AppRoutes.routes,
+    routes: AppRoutes.getAppRoutes(), //Estas rutas se crean en tiempo de compilacion de la aplicación
       onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
     );
   }
