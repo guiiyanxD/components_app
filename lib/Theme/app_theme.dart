@@ -7,14 +7,20 @@ class AppTheme {
   static const Color primary = Colors.indigo;
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
-    primaryColor: Colors.indigoAccent,
+    primaryColor: primary,
+
     appBarTheme: const AppBarTheme(
       color: primary,
       elevation: 0
     ),
-    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
       focusColor: primary,
       elevation: 0
+    ),
+
+      textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(primary: primary)
     ),
 
     iconTheme: const IconThemeData(
