@@ -10,6 +10,9 @@ class CustomTextFormField extends StatelessWidget {
   final Function? validator;
   final bool isPasswordFiled;
 
+  final String formProperty;
+  final Map<String, String> formValues;
+
 
     const CustomTextFormField({
       Key? key,
@@ -21,6 +24,8 @@ class CustomTextFormField extends StatelessWidget {
       this.helpText,
       this.validator,
       this.isPasswordFiled = false,
+      required this.formProperty,
+      required this.formValues,
     }) : super(key: key);
 
   @override
@@ -34,6 +39,9 @@ class CustomTextFormField extends StatelessWidget {
       autovalidateMode: AutovalidateMode.onUserInteraction,
       validator: (value) {
         return value!.length < 3 ? "More than 3 characters" : null;
+      },
+      onChanged: (value) {
+        formValues[formProperty] = value;
       },
       decoration: InputDecoration(
         hintText: hintText,
