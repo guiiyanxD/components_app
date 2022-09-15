@@ -15,6 +15,7 @@ class AppRoutes {
     // MenuOption(route: 'home', icon: Icons.home_filled, name: 'home', screen: const HomeScreen()),
     MenuOption(name: 'AlertScreen', icon: Icons.accessible_forward_outlined, route: 'alert', screen: const AlertScreen()),
     MenuOption(name: 'Card Screen', icon: Icons.abc_outlined, route: 'card', screen: const CardScreen()),
+    MenuOption(name: 'Infinte Scroll & Pull to Refresh', icon: Icons.build_circle_outlined, route: 'listviewBuilder', screen: const ListviewBuilderScreen()),
     MenuOption(name: 'listView1 Screen', icon: Icons.list_outlined, route: 'listView1', screen: const ListViewScreen()),
     MenuOption(name: 'listView2 Screen', icon: Icons.list_alt_outlined, route: 'listView2', screen: const ListView2Screen()),
     MenuOption(name: 'Text Inputs Screen', icon: Icons.input_outlined, route: 'text_inputs', screen: const InputsScreen()),
